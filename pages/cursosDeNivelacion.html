@@ -4,22 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/761604fcc8.js" crossorigin="anonymous"></script>
+    <title>Instituto de Enseñanza Significativa</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid navbar-space">
+                <a class="navbar-brand" href="#"><img class="navbar-img" src="../resources/enapsi-solo.jpg" alt="Inicio"></a>
+                    <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="cardsTitle">Cursos de Nivelacion</h1>
+    <section class="CDSContainer">
+        <img class= "CDSImg" src="../resources/foto4.jpg" alt="Cursos de Nivelacion">
+        <article class="CDSTextAndCards"> 
+        <p class="CDSText">Para aquellos alumnos que estan próximos a afrontar el gran cambio del primario al secundario y también para pasar del secundario a la universidad. Se entrenan nuevos hábitos de estudio y se comienza a trabajar temas fundamentales para iniciar mejor preparado la nueva etapa.</p>
+            <!-- Tarjetas de precios -->
+                <div class="containerPrecios">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title CardTitle">Por clase:</h5>
+                            <p class="card-text">Las clases tienen una duración de 1 Hora.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Individual: $1500</li>
+                            <li class="list-group-item">Grupal: $550</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title CardTitle">Combos Mensuales:</h5>
+                            <p class="card-text">Los combos se abonan por adelantado. Son Grupales.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Combo 8hs: $3600</li>
+                            <li class="list-group-item">Combo 12hs: $5100</li>
+                            <li class="list-group-item">Combo 16hs: $6800</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="../index.html" class="btnVolver">Volver</a>
+        </article>
+    </section>
 
 
-
-
-
-
-
+    <footer class="footerStyle">
+        <div class="redesMapa">
+            <div class="containerRedes">
+                <div class="redes">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p class="textoRedes">_enapsi</p>
+                </div>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p class="textoRedes">/mariajose.ferreri</p>
+                </div>
+                <div class="redes">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="textoRedes">Doello Jurado 1460</p>
+                </div>
+            </div>
+            <div class="Mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.632094261891!2d-58.52663659999999!3d-33.01347379999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa8213da2d59d%3A0x8a1d73e655a1e872!2sDoello%20Jurado%201460%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1659650236636!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="textoDerechos">©ENAPSI 2022 - Todos los derechos reservados</p>
+    </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
