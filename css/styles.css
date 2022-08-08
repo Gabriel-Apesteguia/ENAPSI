@@ -13,7 +13,6 @@
 
 .navbar {
     padding: 10px 30px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar div {
@@ -28,14 +27,12 @@
     margin-top: 0px;
     justify-content: center;
     gap: 10px;
-    font-family: 'Montserrat', sans-serif;
     align-items: flex-start;
 }
 
 .cardsTitle {
     text-align: center;
     padding: 60px 0px 60px 0px;
-    font-family: 'Montserrat'; 
     font-weight:  700;
     color: #134071;
 }
@@ -54,7 +51,6 @@
 }
 
 .cardTitle {
-    font-family: 'Montserrat'; 
     font-weight:  700;
     color: #134071;
 }
@@ -103,7 +99,6 @@
 .sobreNosTitle {
     text-align: center;
     padding-bottom: 40px;
-    font-family: 'Montserrat'; 
     font-weight:  700;
     color: #134071;
 }
@@ -144,11 +139,9 @@
 }
 
 .sobreNosSubTitle {
-    font-family: 'Montserrat'; 
     font-weight:  700;
 }
 .sobreNosText {
-    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -173,7 +166,6 @@
 
 .textoRedes {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 0px 0px 0px 10px;
 }
@@ -197,7 +189,7 @@
 
 
 
-/* PAGINA DE TARJETA -  CURSOS DE SEGUIMIENTO */
+/* PAGINA DE TARJETAS */
 
 .CDSContainer {
     display: flex;
@@ -210,6 +202,8 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+    color: #134071;
 }
 
 .CDSImg {
@@ -221,7 +215,6 @@
     display: flex;
     align-items: center;
     margin: 0px 50px 0px 50px;
-    font-family: 'Montserrat', sans-serif;
     color: #134071;
 }
 
@@ -232,15 +225,31 @@
 }
 
 .CardTitle {
-    font-family: 'Montserrat'; 
     font-weight:  700;
     color: #134071;
 }
 
 .card {
     border-color: #134071;
+    margin: 20px;
 }
 
 .list-group-item {
     border-color: #134071;
+}
+
+.btnVolver {
+    background-color: #134071;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    width: 50%;
+}
+
+.btnVolver:hover {
+    background-color: #00D4DC;
+    color: #134071;
 }
