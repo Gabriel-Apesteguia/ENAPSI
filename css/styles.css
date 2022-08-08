@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+    /* NAVBAR */
+.navbar-img {
+    width: 130px;
+}
+
+
+.navbar {
+    padding: 10px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar div {
+    justify-content: space-evenly
+}
+
+/* TARJETAS INDEX */
+.containerAllCards {
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    margin-top: 0px;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: flex-start;
+}
+
+.cardsTitle {
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    font-family: 'Montserrat'; 
+    font-weight:  700;
+    color: #134071;
+}
+
+.threeCards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.cardTitle {
+    font-family: 'Montserrat'; 
+    font-weight:  700;
+    color: #134071;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: #134071;
+}
+
+.cardBodySmall {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.btnCard {
+    background-color: #134071;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btnCard:hover {
+    background-color: #00D4DC;
+    color: #134071;
+}
+
+/* INTRODUCCION */
+
+.sobreNosContainer{
+    padding: 60px;
+}
+
+.sobreNosTitle {
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Montserrat'; 
+    font-weight:  700;
+    color: #134071;
+}
+
+.containerArticles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sobreNosArticleLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobreNosArticle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleAndText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 60px;
+    width: 50%;
+    color: #134071;
+}
+
+
+.sobreNosImg {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.sobreNosSubTitle {
+    font-family: 'Montserrat'; 
+    font-weight:  700;
+}
+.sobreNosText {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* FOOTER */
+
+.footerStyle {
+    background-color: #134071;
+    padding: 30px;
+}
+
+.redesMapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerRedes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textoRedes {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0px 0px 0px 10px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.textoDerechos {
+    color: white;
+    margin: 10px;
+    text-align: center;
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+
+
+/* PAGINA DE TARJETA -  CURSOS DE SEGUIMIENTO */
+
+.CDSImgAndText {
+    display: flex;
+    flex-direction: row;
+}
+
+.CDSImg {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.CDSText {
+    display: flex;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #134071;
+}
+
+.containerPrecios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
