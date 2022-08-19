@@ -28,6 +28,7 @@
     justify-content: center;
     gap: 10px;
     align-items: flex-start;
+
 }
 
 .cardsTitle {
@@ -47,7 +48,19 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 22rem;
+}
 
+.bigger {
+    width: 25rem;
+}
+
+.onlyDesktop {
+    display: flex;
+}
+
+.onlyMobile {
+    display:none;
 }
 
 .cardTitle {
@@ -189,11 +202,15 @@
     margin-top: 3em;
     display: grid;
     gap: 2.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .form__group {
     position: relative;
     --color:white;
+    width: 65%;
 }
 
 .form__input {
@@ -210,6 +227,7 @@
 .form__text {
     border-radius: 10px;
     margin: 30px 0px;
+    width: 65%;
 }
 
 .form__input:focus + .form__label,
@@ -237,6 +255,7 @@
     border: none;
     border-radius: .5rem;
     width: 50%;
+    align-self: center;
 }
 
 .form__submit:hover {
@@ -262,10 +281,6 @@
 .form__input:not(:placeholder-shown) ~ .form__line {
     transform: scale(1);
 }
-
-
-
-
 
 
 
@@ -377,4 +392,66 @@
 .btnVolver:hover {
     background-color: #00D4DC;
     color: #134071;
+}
+
+
+
+
+/* MEDIA QUERIES MOBILE*/
+
+@media(max-width:768px) { 
+    .containerAllCards {
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+    .cardContainer {
+        width: 300px;
+    }
+    .sobreNosContainer {
+        padding: 20px;
+    }
+    .sobreNosArticleLeft {
+        flex-direction: column;
+    }
+    .sobreNosArticle {
+        flex-direction: column;
+    }
+    .sobreNosImg {
+        width: 100%;
+    }
+    .titleAndText {
+        padding: 0px;
+        width: 100%;
+    }
+    .onlyMobile {
+        display:flex
+    }
+    .onlyDesktop {
+        display: none;
+    }
+    .redesMapa {
+        flex-direction: column;
+    }
+    .form {
+        padding: 2em 1em;
+    }
+    /* CARDS */
+    .cardsTitle {
+        padding: 40px 0px 40px 0px;
+    }
+    .CDSContainer {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .CDSImg {
+        width: 100%;
+    }
+    .CDSText {
+        margin: 10px 20px 0px 20px;
+        text-align: center;
+    }
+    .containerPrecios {
+        flex-direction: column;
+    }
 }
