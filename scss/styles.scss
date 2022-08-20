@@ -326,27 +326,27 @@
     flex-direction: row;
     align-items: center;
     padding: 60px;
-    .CDSTextAndCards {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        color: #134071;
-    }
-    
-    .CDSImg {
-        width: 40%;
-        border-radius: 10px;
-    }
-    
-    .CDSText {
-        display: flex;
-        align-items: center;
-        margin: 0px 50px 0px 50px;
-        color: #134071;
-    }
 }
 
+.CDSTextAndCards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    color: #134071;
+}
+
+.CDSImg {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.CDSText {
+    display: flex;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+    color: #134071;
+}
 
 
 .containerPrecios {
@@ -436,8 +436,9 @@
         padding: 20px;
         flex-direction: column;
     }
-    .CDSImg {
-        width: 100%;
+    .CDSContainer .CDSImg {
+        width: 90%;
+        border-radius: 10px;
     }
     .CDSText {
         margin: 10px 20px 0px 20px;
