@@ -240,7 +240,8 @@
   margin: 10px; }
 
 .redesMapa {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .textoDerechos {
   color: white;
