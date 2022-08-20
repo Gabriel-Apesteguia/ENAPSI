@@ -6,30 +6,22 @@
     }
 
     /* NAVBAR */
-.navbar-img {
-    width: 130px;
-}
-
 
 .navbar {
     padding: 10px 30px;
+    
+    &-img {
+        width: 130px;
+    }
+    
+    & div {
+        justify-content: space-evenly
+    }
 }
 
-.navbar div {
-    justify-content: space-evenly
-}
+
 
 /* TARJETAS INDEX */
-.containerAllCards {
-    display: flex;
-    flex-direction: row;
-    margin: 60px;
-    margin-top: 0px;
-    justify-content: center;
-    gap: 10px;
-    align-items: flex-start;
-
-}
 
 .cardsTitle {
     text-align: center;
@@ -38,10 +30,14 @@
     color: #134071;
 }
 
-.threeCards {
+.containerAllCards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 60px;
+    margin-top: 0px;
+    justify-content: center;
     gap: 10px;
+    align-items: flex-start;
 }
 
 .cardContainer {
@@ -51,16 +47,11 @@
     width: 22rem;
 }
 
-.bigger {
-    width: 25rem;
-}
-
-.onlyDesktop {
+.cardBody {
     display: flex;
-}
-
-.onlyMobile {
-    display:none;
+    flex-direction: column;
+    padding: 15px;
+    color: #134071;
 }
 
 .cardTitle {
@@ -73,11 +64,15 @@
     border-radius: 10px;
 }
 
-.cardBody {
+.smallCards {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    color: #134071;
+    gap: 10px;
+}
+
+
+.bigger {
+    width: 25rem;
 }
 
 .cardBodySmall {
@@ -88,6 +83,14 @@
     width: 100%;
 }
 
+.onlyDesktop {
+    display: flex;
+}
+
+.onlyMobile {
+    display:none;
+}   
+
 .btnCard {
     background-color: #134071;
     border-radius: 10px;
@@ -97,7 +100,6 @@
     text-decoration: none;
     text-align: center;
 }
-
 .btnCard:hover {
     background-color: #00D4DC;
     color: #134071;
@@ -107,26 +109,18 @@
 
 .sobreNosContainer{
     padding: 60px;
-}
-
-.sobreNosTitle {
-    text-align: center;
-    padding-bottom: 40px;
-    font-weight:  700;
-    color: #134071;
-}
-
-.containerArticles {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.sobreNosArticleLeft {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    .sobreNosTitle {
+        text-align: center;
+        padding-bottom: 40px;
+        font-weight:  700;
+        color: #134071;
+    }
+    .containerArticles {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
 }
 
 .sobreNosArticle {
@@ -134,6 +128,10 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+}
+
+.sobreNosArticleLeft {
+    display: flex;
 }
 
 .titleAndText {
@@ -163,19 +161,19 @@
     width: 70%;
     align-items: center;
     margin: auto;
+    .textoMantenimiento {
+        color: #134071;
+        font-size: 20px;
+        text-align: center;
+    }
+    .imgMantenimiento {
+        border-radius: 20px;
+        margin: 0px 0px 80px 0px;
+        width: 70%;
+    }
 }
 
-.textoMantenimiento {
-    color: #134071;
-    font-size: 20px;
-    text-align: center;
-}
 
-.imgMantenimiento {
-    border-radius: 20px;
-    margin: 0px 0px 80px 0px;
-    width: 70%;
-}
 
 /* CONTACTANOS */
 
@@ -190,114 +188,102 @@
     border-radius: 10px;
     text-align: center;
     margin-bottom: 70px;
-}
+    .formTitle {
+        font-size: 2rem;
+        margin-bottom: .5em;
+        color: white;
+    }
+    &__container {
+        margin-top: 3em;
+        display: grid;
+        gap: 2.5em;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .form__group {
+            position: relative;
+            --color:white;
+            width: 65%;
+            .form__input {
+                width: 100%;
+                background: none;
+                color: #00D4DC;
+                font-size: 1rem;
+                padding: .6em .3em;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid var(--color);
+            }
+            
+            .form__input:focus + .form__label,
+            .form__input:not(:placeholder-shown) + .form__label {
+                transform: translateY(-12px) scale(.7);
+                transform-origin: left top;
+            }
 
-.formTitle {
-    font-size: 2rem;
-    margin-bottom: .5em;
-    color: white;
-}
-
-.form__container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.form__group {
-    position: relative;
-    --color:white;
-    width: 65%;
-}
-
-.form__input {
-    width: 100%;
-    background: none;
-    color: #00D4DC;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
+            .form__label {
+                color: var(--color);
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                transform: translateY(10px);
+                transition: transform .5s, color .3s;
+            }
+            .form__line {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color:#00D4DC;
+                transform: scale(0);
+                transform: left bottom;
+                transition: transform .4s;
+            }
+            
+            .form__input:focus ~ .form__line,
+            .form__input:not(:placeholder-shown) ~ .form__line {
+                transform: scale(1);
+            }
+            
+        }
+    }
+    .form__submit {
+        background-color: white;
+        color: #134071;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: .8rem 0;
+        border: none;
+        border-radius: .5rem;
+        width: 50%;
+        align-self: center;
+    }
+    
+    .form__submit:hover {
+        background-color:#00D4DC;
+        color:#134071;
+        
+    }      
 }
 
 .form__text {
     border-radius: 10px;
     margin: 30px 0px;
     width: 65%;
-}
-
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-}
-
-.form__label {
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-}
-
-.form__submit {
-    background-color: white;
-    color: #134071;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8rem 0;
-    border: none;
-    border-radius: .5rem;
-    width: 50%;
-    align-self: center;
-}
-
-.form__submit:hover {
-    background-color:#00D4DC;
-    color:#134071;
-    
-}
-
-
-.form__line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color:#00D4DC;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-
-.form__input:focus ~ .form__line,
-.form__input:not(:placeholder-shown) ~ .form__line {
-    transform: scale(1);
-}
-
-
-
+    }
 
 /* FOOTER */
 
 .footerStyle {
+    display: flex;
     background-color: #134071;
     padding: 30px;
+    flex-direction: column;
 }
 
-.redesMapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .containerRedes {
     display: flex;
     flex-direction: column;
@@ -318,6 +304,9 @@
     margin: 10px;
 }
 
+.redesMapa {
+    display: flex;
+}
 
 .textoDerechos {
     color: white;
@@ -325,8 +314,8 @@
     text-align: center;
     border-top: 2px solid white;
     padding-top: 10px;
+    align-items: center;
 }
-
 
 
 /* PAGINA DE TARJETAS */
@@ -336,27 +325,28 @@
     flex-direction: row;
     align-items: center;
     padding: 60px;
+    .CDSTextAndCards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        color: #134071;
+    }
+    
+    .CDSImg {
+        width: 40%;
+        border-radius: 10px;
+    }
+    
+    .CDSText {
+        display: flex;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        color: #134071;
+    }
 }
 
-.CDSTextAndCards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    color: #134071;
-}
 
-.CDSImg {
-    width: 40%;
-    border-radius: 10px;
-}
-
-.CDSText {
-    display: flex;
-    align-items: center;
-    margin: 0px 50px 0px 50px;
-    color: #134071;
-}
 
 .containerPrecios {
     display: flex;
@@ -364,14 +354,15 @@
     justify-content: space-evenly;
 }
 
-.CardTitle {
-    font-weight:  700;
-    color: #134071;
-}
+
 
 .card {
     border-color: #134071;
     margin: 20px;
+    .CardTitle {
+        font-weight:  700;
+        color: #134071;
+    }
 }
 
 .list-group-item {

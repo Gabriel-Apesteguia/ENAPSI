@@ -5,16 +5,20 @@
   font-family: 'Montserrat', sans-serif; }
 
 /* NAVBAR */
-.navbar-img {
-  width: 130px; }
-
 .navbar {
   padding: 10px 30px; }
-
-.navbar div {
-  justify-content: space-evenly; }
+  .navbar-img {
+    width: 130px; }
+  .navbar div {
+    justify-content: space-evenly; }
 
 /* TARJETAS INDEX */
+.cardsTitle {
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+  font-weight: 700;
+  color: #134071; }
+
 .containerAllCards {
   display: flex;
   flex-direction: row;
@@ -24,31 +28,17 @@
   gap: 10px;
   align-items: flex-start; }
 
-.cardsTitle {
-  text-align: center;
-  padding: 60px 0px 60px 0px;
-  font-weight: 700;
-  color: #134071; }
-
-.threeCards {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; }
-
 .cardContainer {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 22rem; }
 
-.bigger {
-  width: 25rem; }
-
-.onlyDesktop {
-  display: flex; }
-
-.onlyMobile {
-  display: none; }
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: #134071; }
 
 .cardTitle {
   font-weight: 700;
@@ -58,11 +48,13 @@
   width: 100%;
   border-radius: 10px; }
 
-.cardBody {
+.smallCards {
   display: flex;
   flex-direction: column;
-  padding: 15px;
-  color: #134071; }
+  gap: 10px; }
+
+.bigger {
+  width: 25rem; }
 
 .cardBodySmall {
   display: flex;
@@ -70,6 +62,12 @@
   position: absolute;
   bottom: 0px;
   width: 100%; }
+
+.onlyDesktop {
+  display: flex; }
+
+.onlyMobile {
+  display: none; }
 
 .btnCard {
   background-color: #134071;
@@ -87,29 +85,24 @@
 /* INTRODUCCION */
 .sobreNosContainer {
   padding: 60px; }
-
-.sobreNosTitle {
-  text-align: center;
-  padding-bottom: 40px;
-  font-weight: 700;
-  color: #134071; }
-
-.containerArticles {
-  display: flex;
-  flex-direction: column;
-  gap: 50px; }
-
-.sobreNosArticleLeft {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
+  .sobreNosContainer .sobreNosTitle {
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 700;
+    color: #134071; }
+  .sobreNosContainer .containerArticles {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
 
 .sobreNosArticle {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center; }
+
+.sobreNosArticleLeft {
+  display: flex; }
 
 .titleAndText {
   display: flex;
@@ -133,16 +126,14 @@
   width: 70%;
   align-items: center;
   margin: auto; }
-
-.textoMantenimiento {
-  color: #134071;
-  font-size: 20px;
-  text-align: center; }
-
-.imgMantenimiento {
-  border-radius: 20px;
-  margin: 0px 0px 80px 0px;
-  width: 70%; }
+  .containerMantenimiento .textoMantenimiento {
+    color: #134071;
+    font-size: 20px;
+    text-align: center; }
+  .containerMantenimiento .imgMantenimiento {
+    border-radius: 20px;
+    margin: 0px 0px 80px 0px;
+    width: 70%; }
 
 /* CONTACTANOS */
 .form {
@@ -156,94 +147,80 @@
   border-radius: 10px;
   text-align: center;
   margin-bottom: 70px; }
-
-.formTitle {
-  font-size: 2rem;
-  margin-bottom: .5em;
-  color: white; }
-
-.form__container {
-  margin-top: 3em;
-  display: grid;
-  gap: 2.5em;
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
-
-.form__group {
-  position: relative;
-  --color:white;
-  width: 65%; }
-
-.form__input {
-  width: 100%;
-  background: none;
-  color: #00D4DC;
-  font-size: 1rem;
-  padding: .6em .3em;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--color); }
+  .form .formTitle {
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: white; }
+  .form__container {
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    .form__container .form__group {
+      position: relative;
+      --color:white;
+      width: 65%; }
+      .form__container .form__group .form__input {
+        width: 100%;
+        background: none;
+        color: #00D4DC;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color); }
+      .form__container .form__group .form__input:focus + .form__label,
+      .form__container .form__group .form__input:not(:placeholder-shown) + .form__label {
+        transform: translateY(-12px) scale(0.7);
+        transform-origin: left top; }
+      .form__container .form__group .form__label {
+        color: var(--color);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s; }
+      .form__container .form__group .form__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #00D4DC;
+        transform: scale(0);
+        transform: left bottom;
+        transition: transform .4s; }
+      .form__container .form__group .form__input:focus ~ .form__line,
+      .form__container .form__group .form__input:not(:placeholder-shown) ~ .form__line {
+        transform: scale(1); }
+  .form .form__submit {
+    background-color: white;
+    color: #134071;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8rem 0;
+    border: none;
+    border-radius: .5rem;
+    width: 50%;
+    align-self: center; }
+  .form .form__submit:hover {
+    background-color: #00D4DC;
+    color: #134071; }
 
 .form__text {
   border-radius: 10px;
   margin: 30px 0px;
   width: 65%; }
 
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__label {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top; }
-
-.form__label {
-  color: var(--color);
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 5px;
-  transform: translateY(10px);
-  transition: transform .5s, color .3s; }
-
-.form__submit {
-  background-color: white;
-  color: #134071;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: .8rem 0;
-  border: none;
-  border-radius: .5rem;
-  width: 50%;
-  align-self: center; }
-
-.form__submit:hover {
-  background-color: #00D4DC;
-  color: #134071; }
-
-.form__line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #00D4DC;
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform .4s; }
-
-.form__input:focus ~ .form__line,
-.form__input:not(:placeholder-shown) ~ .form__line {
-  transform: scale(1); }
-
 /* FOOTER */
 .footerStyle {
-  background-color: #134071;
-  padding: 30px; }
-
-.redesMapa {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
+  background-color: #134071;
+  padding: 30px;
+  flex-direction: column; }
 
 .containerRedes {
   display: flex;
@@ -262,12 +239,16 @@
   font-size: 20px;
   margin: 10px; }
 
+.redesMapa {
+  display: flex; }
+
 .textoDerechos {
   color: white;
   margin: 10px;
   text-align: center;
   border-top: 2px solid white;
-  padding-top: 10px; }
+  padding-top: 10px;
+  align-items: center; }
 
 /* PAGINA DE TARJETAS */
 .CDSContainer {
@@ -275,36 +256,32 @@
   flex-direction: row;
   align-items: center;
   padding: 60px; }
-
-.CDSTextAndCards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  color: #134071; }
-
-.CDSImg {
-  width: 40%;
-  border-radius: 10px; }
-
-.CDSText {
-  display: flex;
-  align-items: center;
-  margin: 0px 50px 0px 50px;
-  color: #134071; }
+  .CDSContainer .CDSTextAndCards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    color: #134071; }
+  .CDSContainer .CDSImg {
+    width: 40%;
+    border-radius: 10px; }
+  .CDSContainer .CDSText {
+    display: flex;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+    color: #134071; }
 
 .containerPrecios {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
 
-.CardTitle {
-  font-weight: 700;
-  color: #134071; }
-
 .card {
   border-color: #134071;
   margin: 20px; }
+  .card .CardTitle {
+    font-weight: 700;
+    color: #134071; }
 
 .list-group-item {
   border-color: #134071; }
