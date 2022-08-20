@@ -1,457 +1,365 @@
 * {
-    margin: 0px;
-    padding: 0px; 
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
-    /* NAVBAR */
+/* NAVBAR */
 .navbar-img {
-    width: 130px;
-}
-
+  width: 130px; }
 
 .navbar {
-    padding: 10px 30px;
-}
+  padding: 10px 30px; }
 
 .navbar div {
-    justify-content: space-evenly
-}
+  justify-content: space-evenly; }
 
 /* TARJETAS INDEX */
 .containerAllCards {
-    display: flex;
-    flex-direction: row;
-    margin: 60px;
-    margin-top: 0px;
-    justify-content: center;
-    gap: 10px;
-    align-items: flex-start;
-
-}
+  display: flex;
+  flex-direction: row;
+  margin: 60px;
+  margin-top: 0px;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start; }
 
 .cardsTitle {
-    text-align: center;
-    padding: 60px 0px 60px 0px;
-    font-weight:  700;
-    color: #134071;
-}
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+  font-weight: 700;
+  color: #134071; }
 
 .threeCards {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
 
 .cardContainer {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 22rem;
-}
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 22rem; }
 
 .bigger {
-    width: 25rem;
-}
+  width: 25rem; }
 
 .onlyDesktop {
-    display: flex;
-}
+  display: flex; }
 
 .onlyMobile {
-    display:none;
-}
+  display: none; }
 
 .cardTitle {
-    font-weight:  700;
-    color: #134071;
-}
+  font-weight: 700;
+  color: #134071; }
 
 .cardImg {
-    width: 100%;
-    border-radius: 10px;
-}
+  width: 100%;
+  border-radius: 10px; }
 
 .cardBody {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    color: #134071;
-}
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: #134071; }
 
 .cardBodySmall {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
 
 .btnCard {
-    background-color: #134071;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-}
+  background-color: #134071;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center; }
 
 .btnCard:hover {
-    background-color: #00D4DC;
-    color: #134071;
-}
+  background-color: #00D4DC;
+  color: #134071; }
 
 /* INTRODUCCION */
-
-.sobreNosContainer{
-    padding: 60px;
-}
+.sobreNosContainer {
+  padding: 60px; }
 
 .sobreNosTitle {
-    text-align: center;
-    padding-bottom: 40px;
-    font-weight:  700;
-    color: #134071;
-}
+  text-align: center;
+  padding-bottom: 40px;
+  font-weight: 700;
+  color: #134071; }
 
 .containerArticles {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 50px; }
 
 .sobreNosArticleLeft {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
 
 .sobreNosArticle {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center; }
 
 .titleAndText {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 60px;
-    width: 50%;
-    color: #134071;
-}
-
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 60px;
+  width: 50%;
+  color: #134071; }
 
 .sobreNosImg {
-    width: 40%;
-    border-radius: 10px;
-}
+  width: 40%;
+  border-radius: 10px; }
 
 .sobreNosSubTitle {
-    font-weight:  700;
-}
+  font-weight: 700; }
 
 /* SOBRE NOSOTROS */
-
 .containerMantenimiento {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    align-items: center;
-    margin: auto;
-}
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  margin: auto; }
 
 .textoMantenimiento {
-    color: #134071;
-    font-size: 20px;
-    text-align: center;
-}
+  color: #134071;
+  font-size: 20px;
+  text-align: center; }
 
 .imgMantenimiento {
-    border-radius: 20px;
-    margin: 0px 0px 80px 0px;
-    width: 70%;
-}
+  border-radius: 20px;
+  margin: 0px 0px 80px 0px;
+  width: 70%; }
 
 /* CONTACTANOS */
-
 .form {
-    color: white;
-    background-color: #134071;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    padding: 4.5em 3em;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 70px;
-}
+  color: white;
+  background-color: #134071;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 70px; }
 
 .formTitle {
-    font-size: 2rem;
-    margin-bottom: .5em;
-    color: white;
-}
+  font-size: 2rem;
+  margin-bottom: .5em;
+  color: white; }
 
 .form__container {
-    margin-top: 3em;
-    display: grid;
-    gap: 2.5em;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
 
 .form__group {
-    position: relative;
-    --color:white;
-    width: 65%;
-}
+  position: relative;
+  --color:white;
+  width: 65%; }
 
 .form__input {
-    width: 100%;
-    background: none;
-    color: #00D4DC;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-}
+  width: 100%;
+  background: none;
+  color: #00D4DC;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color); }
 
 .form__text {
-    border-radius: 10px;
-    margin: 30px 0px;
-    width: 65%;
-}
+  border-radius: 10px;
+  margin: 30px 0px;
+  width: 65%; }
 
 .form__input:focus + .form__label,
 .form__input:not(:placeholder-shown) + .form__label {
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-}
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top; }
 
 .form__label {
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-}
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s; }
 
 .form__submit {
-    background-color: white;
-    color: #134071;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8rem 0;
-    border: none;
-    border-radius: .5rem;
-    width: 50%;
-    align-self: center;
-}
+  background-color: white;
+  color: #134071;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: .8rem 0;
+  border: none;
+  border-radius: .5rem;
+  width: 50%;
+  align-self: center; }
 
 .form__submit:hover {
-    background-color:#00D4DC;
-    color:#134071;
-    
-}
-
+  background-color: #00D4DC;
+  color: #134071; }
 
 .form__line {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color:#00D4DC;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #00D4DC;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s; }
 
 .form__input:focus ~ .form__line,
 .form__input:not(:placeholder-shown) ~ .form__line {
-    transform: scale(1);
-}
-
-
-
+  transform: scale(1); }
 
 /* FOOTER */
-
 .footerStyle {
-    background-color: #134071;
-    padding: 30px;
-}
+  background-color: #134071;
+  padding: 30px; }
 
 .redesMapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 .containerRedes {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
 
 .textoRedes {
-    display: flex;
-    color: white;
-    margin: 0px 0px 0px 10px;
-}
+  display: flex;
+  color: white;
+  margin: 0px 0px 0px 10px; }
 
 .redes {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-    margin: 10px;
-}
-
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  margin: 10px; }
 
 .textoDerechos {
-    color: white;
-    margin: 10px;
-    text-align: center;
-    border-top: 2px solid white;
-    padding-top: 10px;
-}
-
-
+  color: white;
+  margin: 10px;
+  text-align: center;
+  border-top: 2px solid white;
+  padding-top: 10px; }
 
 /* PAGINA DE TARJETAS */
-
 .CDSContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 60px;
-}
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px; }
 
 .CDSTextAndCards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    color: #134071;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  color: #134071; }
 
 .CDSImg {
-    width: 40%;
-    border-radius: 10px;
-}
+  width: 40%;
+  border-radius: 10px; }
 
 .CDSText {
-    display: flex;
-    align-items: center;
-    margin: 0px 50px 0px 50px;
-    color: #134071;
-}
+  display: flex;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+  color: #134071; }
 
 .containerPrecios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
 
 .CardTitle {
-    font-weight:  700;
-    color: #134071;
-}
+  font-weight: 700;
+  color: #134071; }
 
 .card {
-    border-color: #134071;
-    margin: 20px;
-}
+  border-color: #134071;
+  margin: 20px; }
 
 .list-group-item {
-    border-color: #134071;
-}
+  border-color: #134071; }
 
 .btnVolver {
-    background-color: #134071;
-    border-radius: 10px;
-    border: none;
-    padding: 10px;
-    color:white;
-    text-decoration: none;
-    text-align: center;
-    width: 50%;
-}
+  background-color: #134071;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 50%; }
 
 .btnVolver:hover {
-    background-color: #00D4DC;
-    color: #134071;
-}
-
-
-
+  background-color: #00D4DC;
+  color: #134071; }
 
 /* MEDIA QUERIES MOBILE*/
-
-@media(max-width:768px) { 
-    .containerAllCards {
-        flex-direction: column;
-        margin: 20px;
-        align-items: center;
-    }
-    .cardContainer {
-        width: 300px;
-    }
-    .sobreNosContainer {
-        padding: 20px;
-    }
-    .sobreNosArticleLeft {
-        flex-direction: column;
-    }
-    .sobreNosArticle {
-        flex-direction: column;
-    }
-    .sobreNosImg {
-        width: 100%;
-    }
-    .titleAndText {
-        padding: 0px;
-        width: 100%;
-    }
-    .onlyMobile {
-        display:flex
-    }
-    .onlyDesktop {
-        display: none;
-    }
-    .redesMapa {
-        flex-direction: column;
-    }
-    .form {
-        padding: 2em 1em;
-    }
-    /* CARDS */
-    .cardsTitle {
-        padding: 40px 0px 40px 0px;
-    }
-    .CDSContainer {
-        padding: 20px;
-        flex-direction: column;
-    }
-    .CDSImg {
-        width: 100%;
-    }
-    .CDSText {
-        margin: 10px 20px 0px 20px;
-        text-align: center;
-    }
-    .containerPrecios {
-        flex-direction: column;
-    }
-}
+@media (max-width: 768px) {
+  .containerAllCards {
+    flex-direction: column;
+    margin: 20px;
+    align-items: center; }
+  .cardContainer {
+    width: 300px; }
+  .sobreNosContainer {
+    padding: 20px; }
+  .sobreNosArticleLeft {
+    flex-direction: column; }
+  .sobreNosArticle {
+    flex-direction: column; }
+  .sobreNosImg {
+    width: 100%; }
+  .titleAndText {
+    padding: 0px;
+    width: 100%; }
+  .onlyMobile {
+    display: flex; }
+  .onlyDesktop {
+    display: none; }
+  .redesMapa {
+    flex-direction: column; }
+  .form {
+    padding: 2em 1em; }
+  /* CARDS */
+  .cardsTitle {
+    padding: 40px 0px 40px 0px; }
+  .CDSContainer {
+    padding: 20px;
+    flex-direction: column; }
+  .CDSImg {
+    width: 100%; }
+  .CDSText {
+    margin: 10px 20px 0px 20px;
+    text-align: center; }
+  .containerPrecios {
+    flex-direction: column; } }
